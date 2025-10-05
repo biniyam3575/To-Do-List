@@ -42,8 +42,9 @@ body{
     border: 1px solid wheat;
     border-radius: 10px;
     padding: 4px;
-    width: 80%;
+    width: 100%;
     margin-bottom: 10px;
+    
     
 }
 .listContainer h3{
@@ -65,4 +66,29 @@ li .both{
 }
 li input{
     cursor: pointer;
+}
+
+
+@media(max-width : 400px){
+    .container{
+        margin: 20px 3% 20px 3%;
+        padding: 10px 10px 30px 15px;
+        
+    }
+    .heading #input{
+        width: 60%;
+        margin: 5px 0px 5px 2%;
+
+    }
+    .heading #addBtn{
+        width: 20%;     
+     }
+    #list{
+        padding-left: 0px;
+        margin: 0px;
+
+    }
+    #list li{
+        width: 95%;
+    }
 }
