@@ -1,0 +1,68 @@
+.completed{
+    text-decoration: line-through;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+body{
+    background-color: rgb(36, 36, 36);
+}
+.container{
+    color: wheat;
+    margin: 20px 10% 20px 10%;
+    padding: 20px 30px;
+    background-color: rgb(3, 3, 100);
+    border-radius: 20px;
+    box-shadow: 
+        0px 0px 20px rgba(140, 193, 225, 0.5), 
+        0px 0px 50px rgba(235, 240, 244, 0.3); 
+}
+.heading #input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+    margin: 20px 0px 20px 10%;
+
+}
+.heading #btn{
+    padding: 10px;
+    border-radius: 10px;
+    width: 15%;
+    color: wheat;
+    background-color: rgb(67, 166, 67);
+    border: none;
+    cursor: pointer;
+}
+.heading h2{
+    text-align: center;
+}
+#list li{
+    list-style: none;
+    border: 1px solid wheat;
+    border-radius: 10px;
+    padding: 4px;
+    width: 80%;
+    margin-bottom: 10px;
+    
+}
+.listContainer h3{
+    text-align: center;
+}
+.counter{
+    margin-top: 50px;
+}
+li .both{
+    float: right;
+    
+}
+.both .delete-btn{
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+.both .edit-btn{
+    cursor: pointer;
+}
+li input{
+    cursor: pointer;
+}
