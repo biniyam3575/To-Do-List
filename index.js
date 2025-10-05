@@ -2,6 +2,8 @@ const input= document.getElementById("input");
 const list= document.getElementById("list");
 const completedCounter = document.getElementById("completed-counter");
 const uncompletedCounter = document.getElementById("uncompleted-counter");
+const addBtn= document.getElementById("addBtn");
+
 
 function addTask() {
   const task = input.value.trim();
@@ -9,6 +11,7 @@ function addTask() {
     alert("Please write down a task");
     return;
   }
+
   const li = document.createElement("li");
   li.innerHTML = `
     <label>
@@ -67,4 +70,10 @@ function updateCounters() {
   completedCounter.textContent = completedTasks;
   uncompletedCounter.textContent = uncompletedTasks;
 }
-  
+
+input.addEventListener("keypress",function(event){
+    if(event.key==="Enter"){
+      event.preventDefault();
+      addBtn.click();
+    }
+  });
